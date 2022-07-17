@@ -1,0 +1,83 @@
+.pricing {
+    padding-top: 13.3rem;
+    background-color: $bg-pricing-color;
+    padding-bottom: 13.2rem;
+    &-container {
+        padding-left: 3rem;
+        padding-right: 3rem;
+        h3{
+            text-align: center;
+        }
+        .subtext{
+            text-align: center;
+            max-width: 58.4rem;
+            margin: auto;
+            margin-bottom: 4.4rem;
+        }
+    }
+    &-price{
+        display: flex;
+        justify-content: space-between;
+        &__title{
+            font-size: $pricing-title-size;
+            display: block;
+            text-align: center;
+            max-width: 7.1rem;
+            line-height: 2.7rem;
+            padding: 0;
+            border-bottom: 4px solid;
+            margin: auto auto 2.7rem auto;
+            color: var(--clr);
+        }
+        &__price {
+            font-size: $headprice-size;
+            font-weight: 700;
+            line-height: 8.1rem;
+            text-align: center;
+            span{
+                font-size: 2.7rem;
+            }
+        }
+        &__time{
+            text-align: center;
+            margin-bottom: 2.7rem;
+        }
+    }
+    &-block {
+        position: relative;
+        overflow-x: hidden;
+
+        min-width: 38rem;
+        background-color: white;
+        border-radius: 0.6rem;
+        box-shadow: 1px 9px 16px -1px #454545;
+        padding: 3.1rem 3.4rem 7rem 3.4rem;
+        button{
+            position: relative;
+            margin-top: 3.7rem;
+            display: flex;
+            justify-content: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        &__topbg{
+            position: absolute;
+            z-index: 0;
+            right: 0;
+            top:0;
+            transform: translateX(var(--tran));
+        }
+        &__bottombg{
+            position: absolute;
+            z-index: 0;
+            bottom: 0;
+            left: 0;
+        }
+    }
+    &-feature{
+        margin-top: 1.3rem;
+        display: flex;
+        gap:0 2.2rem;
+    }
+
+}

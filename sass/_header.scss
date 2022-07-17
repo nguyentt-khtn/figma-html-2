@@ -1,0 +1,52 @@
+.header {
+    background-color: $bg-header-color;
+    padding-top: 2.9rem;
+    &-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &-social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:0 2rem;
+    }
+    &-content {
+        padding-bottom: 13.2rem;
+    }
+    &-title {
+        max-width: 83.3rem;
+        margin: 15.8rem auto 0 auto;
+        text-align: center;
+    }
+    &-desc{
+        max-width: 96.4rem;
+        margin: 5rem auto 0 auto;
+        font-size: $service-title-size;
+        line-height: 3.6rem;
+        font-weight: 500;
+        color: $text-color;
+        text-align: center;
+    }
+    &-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:0 4rem;
+        margin-top: 5rem;
+
+        .button-watch{
+            display: flex;
+            align-items: center;
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: $primary-color;
+            text-transform: uppercase;
+            background: white;
+            border: none;
+            padding: 0.8rem 2.2rem;
+            border-radius: 100rem;
+        }
+    }
+}

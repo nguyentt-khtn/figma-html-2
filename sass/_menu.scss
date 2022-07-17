@@ -1,0 +1,21 @@
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:0 2rem;
+    &-item{
+        list-style: none;
+        text-decoration: none;
+        a{
+            color: $heading-color;
+            font-weight: 700;
+            font-size: $text-size;
+            transition: all 0.3s ease;
+            &:hover {
+                color: $primary-color;
+                border-bottom: 0.2rem solid;
+            }
+        }
+        
+    }
+}
