@@ -16,8 +16,9 @@
         }
     }
     &-price{
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 0 4.1rem;
         &__title{
             font-size: $pricing-title-size;
             display: block;
@@ -46,12 +47,14 @@
     &-block {
         position: relative;
         overflow-x: hidden;
-
+        
         min-width: 38rem;
         background-color: white;
         border-radius: 0.6rem;
         box-shadow: 1px 9px 16px -1px #454545;
-        padding: 3.1rem 3.4rem 7rem 3.4rem;
+        padding-top: 3.1rem;
+        padding-bottom: 7rem;
+
         button{
             position: relative;
             margin-top: 3.7rem;
@@ -62,6 +65,7 @@
         }
         &__topbg{
             position: absolute;
+            width: 15.64rem;
             z-index: 0;
             right: 0;
             top:0;
@@ -74,10 +78,19 @@
             left: 0;
         }
     }
+
     &-feature{
         margin-top: 1.3rem;
+        padding: auto;
+        justify-content: center;
         display: flex;
         gap:0 2.2rem;
+        img{
+            width: 2.4rem;
+        }
+        p{
+            min-width: 21.5rem;
+        }
     }
 
 }

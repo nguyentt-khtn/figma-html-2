@@ -1,45 +1,84 @@
 .craft {
     margin-top: 11.4rem;
     padding-bottom: 11.6rem;
-    &-container{
+
+    &-container {
         display: flex;
         align-items: center;
-        gap:0 5.9rem;
+        justify-content: space-between;
         position: relative;
     }
+
     &-content {
         max-width: 80rem;
         align-items: center;
+
         &--text {
             max-width: 58.4rem;
         }
+
+        img {
+            width: 6.4rem;
+        }
     }
 
-    &-service{
+    &-service {
         margin-top: 4.4rem;
         display: flex;
         flex-wrap: wrap;
         gap: 0 5.7rem;
         align-items: center;
 
-        &__block{
+        &__block {
             max-width: 37rem;
             display: flex;
-            gap:0 1.6rem;
+            gap: 0 1.6rem;
             margin-bottom: 5.4rem;
-            img{
+
+            img {
                 max-width: 6.4rem;
-                max-height: 6.4rem;;
+                max-height: 6.4rem;
+                ;
             }
-            h3{
+
+            h3 {
                 margin-bottom: 0.7rem;
             }
         }
     }
-    &-image{
+
+    &-image {
         position: absolute;
-        top:50%;
-        transform: translate(21.3rem ,-50%);
+        top: 50%;
+        transform: translate(21.3rem, -50%);
         right: 0;
+
+        img {
+            width: 63.4rem;
+        }
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .craft {
+
+        &-service {
+            gap: 0 1rem;
+
+            &__block {
+                gap: 0 0.5rem;
+
+                p {
+                    max-width: 25rem;
+                }
+            }
+        }
+
+        &-image {
+            transform: translate(-5rem, -50%);
+            img{
+                width: 50rem;
+            }
+        }
     }
 }

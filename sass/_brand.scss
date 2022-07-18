@@ -4,7 +4,10 @@
     background-color: $bg-pricing-color;
 
     &-container{
-        display: flex;
-        gap:0 6.1rem;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        img{
+            width: 26.3rem;
+        }
     }
 }

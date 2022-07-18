@@ -2,15 +2,23 @@
     background-color: $bg-header-color;
     padding-top: 2.9rem;
     &-container {
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
     }
-
+    &-brand{
+        img{
+            width:5rem;
+        }
+    }
     &-social {
+        right: 0;
         display: flex;
-        justify-content: center;
+        justify-content: end;
         align-items: center;
         gap:0 2rem;
+        img{
+            width: 3.2rem;
+        }
     }
     &-content {
         padding-bottom: 13.2rem;
@@ -47,6 +55,9 @@
             border: none;
             padding: 0.8rem 2.2rem;
             border-radius: 100rem;
+            img{
+                width: 3.6rem;
+            }
         }
     }
 }

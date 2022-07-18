@@ -1,21 +1,23 @@
 .contact {
 
-    display: flex;
-
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    &-image{
+        // max-width: 50%;
+    }
     &-content {
-        padding-top: 8.9rem;
         // padding-left: 19.1rem;
         // padding-right: 19.1rem;
-        padding-bottom: 7.4rem;
-        width: 50%;
+        // max-width: 50%;
         background-color: $primary-color;
-
+        display: flex;
+        flex-direction: column;
         h3 {
             color: white;
             max-width: 57.8rem;
             text-transform: capitalize;
             font-weight: 600;
-            margin: 0 auto 4rem auto;
+            margin: auto;
         }
 
         p {
@@ -49,6 +51,7 @@
         img {
             position: absolute;
             z-index: 2;
+            width: 3.6rem;
             top: 50%;
             transform: translate(2.3rem,-50%);
         }

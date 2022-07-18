@@ -3,12 +3,110 @@
 
     &-container {
         padding-top: 3.1rem;
-
+        padding-bottom: 5.2rem;
     }
-    &-icon{
+
+    &-icon {
         display: flex;
         gap: 0 2rem;
         align-items: center;
         margin-bottom: 2.7rem;
+        img{
+            width: 4.5rem;
+        }
+    }
+    &-icon:first-child{
+        img{
+            width: 5rem;
+            margin-right: 1.3rem;
+        }
+    }
+
+    &-content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &-menu {
+        list-style: none;
+        p{
+            max-width: 36.9rem;
+            margin-top: 2.4rem;
+            color: $heading-color;
+            font-weight: 500;
+        }
+    }
+
+    &-heading {
+        font-size: $text-size__small;
+        font-weight: 700;
+        line-height: 2.1rem;
+        margin-bottom: 2.8rem;
+        color:$text-color;
+        text-transform: uppercase;
+    }
+
+    &-item {
+        margin-bottom: 1.4rem;
+        font-size: $text-size__small;
+        line-height: 2.1rem;
+        font-weight: 500;
+
+        a {
+            color: $heading-color;
+        }
+    }
+    &-input {
+        width: 36.5rem;
+        height: 5rem;
+        position: relative;
+        margin: auto;
+        input {
+            position: absolute;
+            border-radius: 100rem;
+            border: none;
+            width: inherit;
+            height: inherit;
+            padding-left: 2.1rem;
+        background-color: #EDF2F7;
+            
+        }
+        input::placeholder{
+            font-size: $text-size__small;
+            font-weight: 500;
+            color: #A1A1A1
+        }
+        img {
+            position: absolute;
+            z-index: 2;
+            top: 50%;
+            transform: translate(2.3rem,-50%);
+        }
+        button{
+            position: absolute;
+            right: 0;
+            height: 3.6rem;
+            width: 3.6rem;
+            transform: translateX(-4rem);
+            margin-top: 0.7rem;
+            line-height: 2.7rem;
+            border: none;
+            background-color: transparent;
+        }
+    }
+
+    &-copyright{
+        background-color: $footer-color;
+        padding: 2.4rem;
+
+        p{
+            font-size: $text-size;
+            font-weight: 600;
+            max-width: 50.7rem;
+            color: white;
+            margin: auto;
+            text-align: center;
+            font-style: normal;
+        }
     }
 }
