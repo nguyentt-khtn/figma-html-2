@@ -72,13 +72,18 @@ body {
     margin: 0 auto;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1279px) {
     html {
         font-size: 30%;
     }
 }
-@media screen and (max-width: 1366px) {
+@media screen and (max-width: 1365px) {
     html {
         font-size: 50%;
+    }
+}
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 60%;
     }
 }

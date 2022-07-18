@@ -73,3 +73,14 @@
         }
     }
 }
+@media screen and (max-width: 768px) {
+    .contact{
+        display: flex;
+        flex-direction: column;
+
+        &-content{
+            padding: 5rem 0;
+        }
+    }
+
+}
