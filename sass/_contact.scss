@@ -73,14 +73,26 @@
         }
     }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
     .contact{
         display: flex;
         flex-direction: column;
-
+        
         &-content{
             padding: 5rem 0;
         }
     }
 
+}
+@media screen and (max-width: 479px) {
+    .contact{
+
+        &-input{
+            width: 100%;
+
+            button{
+                padding: 1.5rem 1rem;
+            }
+        }
+    }
 }

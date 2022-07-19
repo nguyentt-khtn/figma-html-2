@@ -11,3 +11,16 @@
         }
     }
 }
+@media screen and (max-width: 1023px) {
+    .brand{
+
+        &-container{
+            grid-template-columns: repeat(2,1fr);
+            column-gap: 3rem;
+            row-gap: 3rem;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
